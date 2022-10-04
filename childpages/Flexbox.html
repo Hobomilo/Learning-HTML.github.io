@@ -28,9 +28,9 @@
                 box-sizing: border-box;
                 font-size: 2vw;
             }
-            div {border: thin dotted red}
+            //div {border: thin solid red}
             .header {
-                border: 1px solid teal;
+                border: 2px solid rgb(0, 14, 255);
                 padding: 15px;
                 font-size: 4vw;
             }
@@ -38,23 +38,23 @@
                 width: 25%;
                 float: left;
                 padding: 15px;
-                border: 1px solid salmon;
+                border: 2px solid salmon;
             }
             .main {
                 width: 50%;
                 float: left;
                 padding: 15px;
-                border: 1px solid salmon;
+                border: 2px solid salmon;
             }
             .aside {
                 width: 25%;
-                float: left;
+                float: right;
                 padding: 15px;
-                border: 1px solid salmon;
+                border: 2px solid salmon;
             }
             .footer {
                 padding: 15px;
-                border: 1px solid salmon;
+                border: 2px solid salmon;
             }
         </style>
 
@@ -69,12 +69,10 @@
             <a>And styles in the head</a>
         </header>
        </div>
-       <div><nav>Navigation</nav></div> 
-       <div><aside>Aside</aside></div> 
-       <div><main>Main</main></div> 
-       <div><section>Section</section></div> 
-       <div><article>Article</article></div> 
-       <div><footer></footer></div> 
+       <div><nav class="menu">Navigation</nav></div> 
+       <div><aside class="aside">Aside</aside></div> 
+       <div><main class="main">Main</main></div> 
+       <div><footer class="footer">Footer</footer></div> 
     </body>
 
     <div><footer>
