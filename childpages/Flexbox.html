@@ -24,15 +24,37 @@
         <!-- Already specified in the charset above-->
 
         <style>
+            * {
+                box-sizing: border-box;
+                font-size: 2vw;
+            }
             div {border: thin dotted red}
-            header {
+            .header {
                 border: 1px solid teal;
                 padding: 15px;
+                font-size: 4vw;
             }
-            .menu {}
-            .main {}
-            .aside {}
-            .footer {}
+            .menu {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid salmon;
+            }
+            .main {
+                width: 50%;
+                float: left;
+                padding: 15px;
+                border: 1px solid salmon;
+            }
+            .aside {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid salmon;}
+            .footer {
+                padding: 15px;
+                border: 1px solid salmon;
+            }
         </style>
 
         <noscript>JavaScript is not necessary here</noscript>
@@ -40,8 +62,13 @@
     </head>
     
     <body>
-       <div><header>Header</header></div>
-       <div><nav class="header">Navigation</nav></div> 
+       <div>
+        <header class="header">
+            <h1 style="font-size: 5vw;">Flexbox</h1>
+            <a>And styles in the head</a>
+        </header>
+       </div>
+       <div><nav>Navigation</nav></div> 
        <div><aside>Aside</aside></div> 
        <div><main>Main</main></div> 
        <div><section>Section</section></div> 
